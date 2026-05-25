@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Gene Atlas: Morin Khuur v2
  * Scroll animations, navigation behavior, Lenis smooth scroll
  */
@@ -1355,9 +1355,7 @@ function initInstrumentTypes() {
             <dt>流派地域：</dt><dd>${item.dataset.region || ''}</dd>
             <dt>形制分类：</dt><dd>${item.dataset.category || ''}</dd>
             <dt>材质构成：</dt><dd>${item.dataset.material || ''}</dd>
-            <dt>琴头样子：</dt><dd>${item.dataset.head || ''}</dd>
-            <dt>主要花纹：</dt><dd>${item.dataset.pattern || ''}</dd>
-            <dt>花纹寓意：</dt><dd>${item.dataset.meaning || ''}</dd>
+            <dt>琴头形制：</dt><dd>${item.dataset.head || ''}</dd>
             <dt>主要颜色：</dt><dd>${item.dataset.color || ''}</dd>
         `;
 
@@ -1629,3 +1627,4 @@ function initPerformanceFingering() {
 
     setPosition('1');
 }
+

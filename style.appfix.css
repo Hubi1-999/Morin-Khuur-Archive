@@ -1,4 +1,4 @@
-/* ===================================
+﻿/* ===================================
    Gene Atlas: Morin Khuur
    1:1 Variant Design Reproduction
    =================================== */
@@ -3909,7 +3909,7 @@ section[id] {
 .fingering-img-bottom img {
     width: 100%;
     height: auto;
-    max-width: 14.5rem;
+    max-width: 16rem;
     object-fit: contain;
     display: block;
     border-radius: 2px;
@@ -7069,3 +7069,4 @@ section[id] {
     color: #D1D5DB;
     letter-spacing: 0.15em;
 }
+
