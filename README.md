@@ -1,22 +1,20 @@
-# Gene Atlas: Morin Khuur 马头琴文化基因图谱
+# Morin Khuur Archive 马头琴文化基因图谱
 
-[![GitHub license](https://img.shields.io/github/license/JiangLai999/matouqin?color=blue)]()
-[![GitHub stars](https://img.shields.io/github/stars/JiangLai999/matouqin?style=social)](https://github.com/JiangLai999/matouqin/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/JiangLai999/matouqin?style=social)](https://github.com/JiangLai999/matouqin/network/members)
-[![GitHub last commit](https://img.shields.io/github/last-commit/JiangLai999/matouqin?color=green)](https://github.com/JiangLai999/matouqin/commits/master)
-[![GitHub repo size](https://img.shields.io/github/repo-size/JiangLai999/matouqin?color=orange)](https://github.com/JiangLai999/matouqin)
-[![Languages](https://img.shields.io/github/languages/top/JiangLai999/matouqin?color=yellow)](https://github.com/JiangLai999/matouqin)
+[![GitHub license](https://img.shields.io/github/license/Hubi1-999/Morin-Khuur-Archive?color=blue)]()
+[![GitHub stars](https://img.shields.io/github/stars/Hubi1-999/Morin-Khuur-Archive?style=social)](https://github.com/Hubi1-999/Morin-Khuur-Archive/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Hubi1-999/Morin-Khuur-Archive?style=social)](https://github.com/Hubi1-999/Morin-Khuur-Archive/network/members)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Hubi1-999/Morin-Khuur-Archive?color=green)](https://github.com/Hubi1-999/Morin-Khuur-Archive/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/Hubi1-999/Morin-Khuur-Archive?color=orange)](https://github.com/Hubi1-999/Morin-Khuur-Archive)
+[![Languages](https://img.shields.io/github/languages/top/Hubi1-999/Morin-Khuur-Archive?color=yellow)](https://github.com/Hubi1-999/Morin-Khuur-Archive)
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
----
-
-> 拨动时间的琴弦，解码马头琴的文化基因。从草原神话的远古回响，到跨界融合的 renewed 歌声。
+> 拨动时间的琴弦，解码马头琴的文化基因。从草原神话的远古回响，到跨界融合的全新吟唱。
 
 ## 项目简介
 
-**Gene Atlas: Morin Khuur** 是一个以马头琴（Morin Khuur）为主题的交互式文化基因图谱网站。通过现代化的网页设计与滚动动画技术，系统性地展示马头琴的历史渊源、器型结构、制作工艺、纹样艺术、音乐分类及传承发展等文化内容。
+**Morin Khuur Archive** 是一个以马头琴（Morin Khuur）为主题的交互式文化基因图谱网站。通过现代化的网页设计与滚动动画技术，系统性地展示马头琴的历史渊源、器型结构、制作工艺、纹样艺术、音乐分类及传承发展等文化内容。
 
 ## 功能板块
 
@@ -26,8 +24,8 @@
 | 结构与器型 | 马头琴解剖学 SVG 图示，标注各部件名称与功能 |
 | 历史脉络 | 从唐宋奚琴到现代马头琴的演变时间线 |
 | 制作工艺 | 选材、雕刻、蒙皮、上漆等十二道工序展示 |
-| 样本展示 | 多种马头琴样本图片与器型对比 |
-| 马头琴纹样 | 云纹、回纹、犄纹、盘肠纹等传统纹样解析 |
+| 马头琴器型 | 多种马头琴样本图片与器型对比 |
+| 装饰纹样 | 云纹、回纹、犄纹、盘肠纹等传统纹样解析 |
 | 文化与故事 | 马头琴相关的蒙古族神话与民间故事 |
 | 音乐分类 | 宫廷音乐、民间音乐、叙事音乐、说唱音乐等分类 |
 | 演奏 | 演奏姿势、指法、手法图解 |
@@ -46,7 +44,7 @@
 ## 项目结构
 
 ```
-matouqin/
+Morin-Khuur-Archive/
 ├── index.html                  # 主页面（单页滚动）
 ├── history.html                # 历史脉络独立页面
 ├── style.css                   # 基础样式
@@ -76,6 +74,10 @@ matouqin/
 └── img/                        # 额外图片资源
 ```
 
+## 在线预览
+
+[https://hubi1-999.github.io/Morin-Khuur-Archive/](https://hubi1-999.github.io/Morin-Khuur-Archive/)
+
 ## 本地运行
 
 ### 方式一：使用启动脚本
@@ -87,9 +89,6 @@ matouqin/
 ```bash
 # Python 3
 python -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
 
 # Node.js (需安装 http-server)
 npx http-server -p 8000
@@ -104,6 +103,10 @@ npx http-server -p 8000
 - Firefox 88+
 - Safari 14+
 - Edge 90+
+
+## 制作者
+
+**赵云彦、朱欣雨** · 内蒙古科技大学 建筑与艺术设计学院
 
 ## 许可证
 
