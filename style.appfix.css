@@ -450,6 +450,55 @@ body.mobile-nav-open {
     letter-spacing: 0.02em;
 }
 
+.hero-credits {
+    margin-top: 1.6rem;
+    padding-left: 24px;
+    margin-left: 1.5vw;
+    padding-top: 1.2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.hero-credits::before {
+    content: '';
+    position: absolute;
+    left: 24px;
+    right: 0;
+    top: 0;
+    height: 1px;
+    width: 60px;
+    background: linear-gradient(90deg, #C48E3C 40%, transparent 100%);
+    opacity: 0.5;
+}
+
+.credits-authors {
+    font-family: 'Noto Serif SC', 'Noto Sans SC', serif;
+    font-size: clamp(0.82rem, 0.95vw, 1rem);
+    font-weight: 500;
+    color: #889099;
+    letter-spacing: 0.06em;
+}
+
+.credits-authors::after {
+    content: '·';
+    margin-left: 0.5rem;
+    color: #6B7280;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.credits-institution {
+    font-family: 'Noto Sans SC', 'Inter', sans-serif;
+    font-size: clamp(0.7rem, 0.8vw, 0.85rem);
+    font-weight: 300;
+    color: #889099;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
 .hero-footer {
     display: flex;
     justify-content: space-between;
@@ -3857,7 +3906,6 @@ section[id] {
     display: grid;
     grid-template-columns: auto minmax(18rem, 1fr);
     gap: 1rem;
-    align-items: start;
 }
 
 .fingering-main-view,
@@ -3871,17 +3919,18 @@ section[id] {
 }
 
 .fingering-main-view {
-    justify-self: start;
+    justify-self: center;
     width: fit-content;
     padding: 0.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: stretch;
 }
 
 .fingering-main-view img {
-    width: min(100%, 22rem);
-    height: auto;
+    width: min(100%, 28rem);
+    height: 100%;
     object-fit: contain;
     display: block;
     border-radius: 2px;
@@ -3909,7 +3958,7 @@ section[id] {
 .fingering-img-bottom img {
     width: 100%;
     height: auto;
-    max-width: 16rem;
+    max-width: 14.5rem;
     object-fit: contain;
     display: block;
     border-radius: 2px;
@@ -5362,6 +5411,15 @@ section[id] {
     color: rgba(43, 36, 29, 0.48);
 }
 
+.footer-credits {
+    font-family: 'Noto Sans SC', 'Inter', sans-serif;
+    font-size: 0.72rem;
+    color: rgba(43, 36, 29, 0.45);
+    letter-spacing: 0.04em;
+    margin: 0;
+    line-height: 1;
+}
+
 @media (max-width: 1200px) {
     .epilogue-section .section-left {
         width: 33%;
@@ -5479,6 +5537,11 @@ section[id] {
     .hero-content, .hero-main { min-height: auto; }
     .hero-title { font-size: clamp(2.4rem, 14vw, 3.8rem); line-height: 0.95; }
     .hero-subtitle p { font-size: 0.82rem; line-height: 1.65; }
+    .hero-credits { margin-top: 1.2rem; padding-left: 16px; margin-left: 0; gap: 0; flex-direction: column; align-items: flex-start; }
+    .hero-credits::before { left: 16px; width: 40px; }
+    .credits-authors { font-size: 0.8rem; }
+    .credits-authors::after { content: none; }
+    .credits-institution { font-size: 0.7rem; margin-top: 2px; white-space: normal; }
     .hero-footer, .hero-meta { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
     .hero-image { position: relative; top: auto; left: auto; width: 100%; height: 42vh; min-height: 16rem; transform: none; margin-top: 1.2rem; animation: none; }
     .hero-image::before { left: 8%; top: 12%; width: 64%; height: 60%; }
@@ -5513,8 +5576,9 @@ section[id] {
     .instrument-intro-label { font-size: 0.6rem; }
     .instrument-types-intro h2 { font-size: 1.2rem; }
     .instrument-types-intro h3 { font-size: 0.88rem; margin-bottom: 1.1rem; }
-    .instrument-types-intro .intro-zh { font-size: 0.82rem; line-height: 1.72; }
-    .instrument-intro-card + .instrument-intro-card { margin-top: 0.85rem; }
+    .instrument-types-intro .intro-zh { font-size: 0.82rem; line-height: 1.72; text-align: left; }
+    .instrument-intro-card { padding: 0.9rem 0.85rem; background: rgba(255,254,250,0.85); border-left: 2px solid rgba(201,155,69,0.35); margin-bottom: 0.7rem; }
+    .instrument-intro-card + .instrument-intro-card { margin-top: 0; }
     .instrument-shape-strip { grid-template-columns: repeat(2, 1fr); margin-left: 0; margin-top: 1rem; padding-right: 0; gap: 0.7rem; }
     .instrument-shape-strip figure { aspect-ratio: 1 / 1.06; }
     .instrument-shape-strip figcaption { font-size: 0.64rem; padding: 0.42rem 0.55rem 0.46rem; letter-spacing: 0.03em; }
@@ -5529,8 +5593,9 @@ section[id] {
     .instrument-kind-detail { padding: 1.1rem 1rem 1rem; }
     .instrument-kind-detail::before { margin-bottom: 0.6rem; font-size: 0.56rem; }
     .instrument-kind-detail h3 { font-size: 1.02rem; margin-bottom: 0.8rem; padding-bottom: 0.55rem; }
-    .instrument-kind-detail dt { font-size: 0.62rem; margin-top: 0.65rem; }
-    .instrument-kind-detail dd { font-size: 0.75rem; line-height: 1.65; padding-bottom: 0.55rem; }
+    .instrument-kind-detail dt { font-size: 0.65rem; margin-top: 0.55rem; letter-spacing: 0.08em; }
+    .instrument-kind-detail dd { font-size: 0.8rem; line-height: 1.7; padding-bottom: 0.5rem; }
+    .instrument-kind-detail dl { gap: 0; }
 
     /* --- Music classification --- */
     .music-class-layout { grid-template-columns: 1fr !important; }
@@ -6814,7 +6879,7 @@ section[id] {
 
     .history-progress-bar .step-label {
         font-size: 0.52rem;
-        margin-top: 0.4rem;
+    margin-top: 0.15rem;
         letter-spacing: 0.02em;
     }
 
