@@ -3074,9 +3074,36 @@
         updateInfo(bars[0]);
     })();
     </script>
-    
 
-
+    <!-- NFC 卡片独立模式 -->
+    <button class="nfc-back-btn" id="nfcBackBtn" onclick="location.href='index.html'">← 返回完整图谱</button>
+    <script>
+    (function() {
+        var nfcSections = {
+            'anatomy': '结构与器型',
+            'history': '历史脉络',
+            'craftsmanship': '制作工艺',
+            'patterns': '纹样图谱',
+            'performance': '音乐演奏',
+            'heritage': '传承应用'
+        };
+        var params = new URLSearchParams(window.location.search);
+        var section = params.get('section') || window.location.hash.replace('#', '');
+        if (section && nfcSections[section]) {
+            document.body.classList.add('nfc-mode');
+            var target = document.getElementById(section);
+            if (target) {
+                target.classList.add('nfc-active');
+                if (window.location.hash !== '#' + section) {
+                    history.replaceState(null, '', '#' + section);
+                }
+            }
+            if (typeof lenis !== 'undefined' && lenis && typeof lenis.destroy === 'function') {
+                lenis.destroy();
+            }
+        }
+    })();
+    </script>
 
 </body>
 </html>

@@ -7135,3 +7135,56 @@ section[id] {
     letter-spacing: 0.15em;
 }
 
+/* ===== NFC 卡片独立模式 ===== */
+body.nfc-mode {
+    overflow: auto !important;
+}
+
+body.nfc-mode .main-nav,
+body.nfc-mode .side-nav,
+body.nfc-mode .hero-footer,
+body.nfc-mode .scroll-indicator,
+body.nfc-mode .back-to-top,
+body.nfc-mode .site-footer,
+body.nfc-mode .mobile-nav-toggle,
+body.nfc-mode .image-modal,
+body.nfc-mode .heritage-modal {
+    display: none !important;
+}
+
+body.nfc-mode section:not(.nfc-active) {
+    display: none !important;
+}
+
+body.nfc-mode section.nfc-active {
+    display: block !important;
+    min-height: 100vh;
+    padding-top: 2rem !important;
+}
+
+.nfc-back-btn {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 9999;
+    font-family: 'Noto Sans SC', 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: #8B6A2B;
+    background: rgba(255,254,250,0.92);
+    border: 1px solid rgba(156,127,74,0.25);
+    padding: 0.45rem 1rem;
+    cursor: pointer;
+    border-radius: 2px;
+    letter-spacing: 0.04em;
+    transition: background 0.2s;
+    display: none;
+}
+
+body.nfc-mode .nfc-back-btn {
+    display: block;
+}
+
+.nfc-back-btn:hover {
+    background: rgba(247,242,232,0.98);
+}
+
